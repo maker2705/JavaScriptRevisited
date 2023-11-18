@@ -10,7 +10,7 @@
      ```javascript
         const obj = Object();
      ```
-It is because Object() is a built-in constructor function, so there is no need to use 'new' keyword. 
+It is because Object() is a built-in constructor function, so there is no need to use 'new' keyword.
 
 ```javascript
     const person = Object();
@@ -19,7 +19,16 @@ It is because Object() is a built-in constructor function, so there is no need t
         age: 18
     }
 ```
+It will show type error.
+`` TypeError: Assignment to constant variable. ``
 
+```javascript
+    let person = Object();
+    person = {
+        name: "Ankit",
+        age: 18
+    }
+```
     Now you might be thinking that I inserted some key-value pairs in the person object.
     But the thing is I just overrode the first person object with the second person object literal.
     If you need to insert the key-value pairs in it then you have to do so by using the (.) dot notation.

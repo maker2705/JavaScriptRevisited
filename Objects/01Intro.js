@@ -17,7 +17,7 @@ console.log(user.name)
 //* Symbol is a special data type in JS
 
 const mySymbol = Symbol("nickname");
-//* In this line, you're creating a Symbol mySymbol with the description "nickname".
+//* In this line, we're creating a Symbol mySymbol with the description "nickname".
 const JSUser  = {
     name: "Ankit",
     "Last Name": "N/A",
@@ -54,3 +54,14 @@ console.log(console.log("first"));
         //* Therefore, the final output will be:
             // >> first
             // >> undefined
+
+
+let person  = new Object();
+person.name = 'Anni';
+console.log(`before overriding: ` ,person);
+
+ person = {
+    name: 'Ankit'
+}
+
+console.log(person);
