@@ -18,4 +18,9 @@ function foo() {
  * This means y becomes a global variable.
  */
 
+// whatIf ? 
+/**
+ * if y was declared using the var then the output would have been : 1 undefined undefined
+ * because y isn't accessible outside the function scope
+ */
 
